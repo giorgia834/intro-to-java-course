@@ -6,8 +6,7 @@ public class App {
     }
 
     public static String concatenate(String word1, String word2, String word3) {
-        // TODO: Write code that concatenates the input parameters and returns the result
-        throw new RuntimeException("Not implemented");
+        return word1 + word2 + word3;
     }
 
     public static Boolean areEqual(String word1, String word2) {
