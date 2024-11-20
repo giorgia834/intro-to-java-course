@@ -10,8 +10,7 @@ public class App {
     }
 
     public static Boolean areEqual(String word1, String word2) {
-        // TODO: Write code to determine whether the input parameters are equal strings
-        throw new RuntimeException("Not implemented");
+        return word1 == word2;
     }
 
     public static String format(String item, int quantity, double price) {
