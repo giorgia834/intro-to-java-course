@@ -8,12 +8,13 @@ public class CollectionsExercises {
         LinkedList<Integer> integers = new LinkedList<>();
         integers.add(4);
         integers.add(5);
-        integers.add(4);
         integers.add(6);
         integers.add(8);
         integers.add(2);
         integers.add(9);
         integers.add(2);
+        integers.add(2,4);
+        
         System.out.println(integers.element());
         return integers;
         // TODO: create an empty linked list
@@ -32,12 +33,12 @@ public class CollectionsExercises {
         stacks.push(6);
         stacks.push(8);
         stacks.push(9);
-        Integer firstValue = stacks.peek();
-        System.out.println(firstValue);
+        Integer firstValue = stacks.firstElement();
+        System.out.print(firstValue);
         Integer lastValue = stacks.lastElement();
-        System.out.println(lastValue);
+        System.out.print(lastValue);
         Integer firstValueRemoved = stacks.pop();
-        System.out.println(firstValueRemoved);
+        System.out.print(firstValueRemoved);
         stacks.push(4);
         return stacks;
 
@@ -57,13 +58,13 @@ public class CollectionsExercises {
         deque.add(8);
         deque.add(9); 
         Integer first = deque.getFirst();
-        System.out.println(first);
+        System.out.print(first);
         Integer last = deque.getLast();
-        System.out.println(last);
+        System.out.print(last);
         Integer firstValue = deque.poll();
-        System.out.println(firstValue);
+        System.out.print(firstValue);
         Integer elementValue = deque.element();
-        System.out.println(elementValue);
+        System.out.print(elementValue);
         return deque;
 
 
@@ -85,9 +86,9 @@ public class CollectionsExercises {
         map.put(4, "Java");
         map.put(5, "JavaScript");
         map.put(6, "Rust");
-        System.out.println(map.keySet());
-        System.out.println(map.values());
-        System.out.println(map.containsValue("English"));
+        System.out.print(map.keySet());
+        System.out.print(map.values());
+        System.out.print(map.containsValue("English"));
         return map;
 
 
