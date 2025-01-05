@@ -18,7 +18,6 @@ public class ExcerciseClient {
             Socket socket = new Socket("localhost", 4040);
             // send message
             String message;
-
             OutputStream message = socket.getOutputStream();
 
         } catch (UnknownHostException ue) {
