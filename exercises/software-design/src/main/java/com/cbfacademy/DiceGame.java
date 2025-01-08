@@ -6,8 +6,8 @@ public class DiceGame {
     private int targetScore = 30;
 
     public DiceGame() {
-        player1 = new DicePlayer();
-        player2 = new DicePlayer();
+        player1 = PlayerFactory.create();
+        player2 = PlayerFactory.create();
         player1.setName("Player 1");
         player2.setName("Player 2");
     }
@@ -26,12 +26,12 @@ public class DiceGame {
             System.out.println();
         }
 
-        if(score1 > score2) {
+        if (score1 > score2) {
             winner = player1.getName();
         } else if (score2 > score1) {
             player2.getName();
         }
-        
+
         return winner;
     }
 }
